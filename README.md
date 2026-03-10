@@ -52,7 +52,7 @@ These indicators allowed the prioritization of products based on **hourly profit
 
 ## Key Insights
 
-The analysis highlights the gap between **theoretical profitability** and **real operational constraints**.
+The analysis highlights the gap between theoretical profitability and real operational constraints.
 
 Several factors affected the final results:
 
