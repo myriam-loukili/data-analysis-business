@@ -1,90 +1,81 @@
-# Data Analysis of a Small Dessert Business
+# From Theoretical Profitability to Real Business Data
+### Data Analysis of a Small Dessert Business
 
 ## Project Overview
 
-This project analyses the economic performance of a small-scale dessert business launched as a one-month test activity.
+This project analyzes the profitability of a small homemade dessert business operated over a one-month test period.
 
-The goal of this project was to evaluate the real profitability of the business and understand how operational constraints influence economic performance.
+The objective is to understand how data analysis can support the transition from theoretical profitability estimates to real operational profitability when production capacity is limited.
 
-The analysis was conducted using Python and focuses on identifying the most profitable products while considering production limitations.
+The project combines two complementary approaches:
 
----
+- a **predictive profitability model built with Python**, developed before launching the activity  
+- an **analysis of real operational data using SQL**, once the activity started
 
-## Objectives
-
-* Identify the most profitable products
-* Measure profitability per product
-* Evaluate production capacity
-* Compare theoretical profitability with real operational results
+The purpose is to compare theoretical assumptions with actual operational results and identify the gap between calculated indicators and real production conditions.
 
 ---
 
-## Methodology
+## Predictive Profitability Analysis (Python)
 
-Before launching the activity, a theoretical profitability model was built using Python.
+Before launching the activity, Python was used to model the profitability of different products.
 
-For each product, the following variables were collected:
+The analysis relies on several key variables:
 
-* Cost of raw materials
-* Selling price
-* Preparation time
+- selling price  
+- ingredient costs  
+- preparation time  
 
-From these variables, several performance indicators were calculated:
+From these inputs, the following indicators were calculated:
 
-* Gross margin
-* Margin per minute
-* Margin per hour
-* Production simulation over a fixed time period
+- gross margin  
+- margin rate  
+- margin per minute  
+- margin per hour  
+- production simulations under time constraints
 
-These indicators allowed the prioritization of products based on **hourly profitability**, rather than simply comparing unit margins.
+This analysis helps identify which products are theoretically the most profitable when production time is limited.
 
 ---
 
-## Tools Used
+## Operational Data Analysis (SQL)
 
-* Python
-* Pandas
-* Matplotlib
-* SQL
-* Jupyter Notebook
+Once the activity started, real operational data was structured in a SQLite database.
+
+The database includes several tables:
+
+- products  
+- sales  
+- supplies  
+
+SQL queries were used to analyze:
+
+- revenue evolution over time  
+- each product's contribution to total revenue  
+- real margin levels by product  
+- ingredient and supply expenses  
+
+This structure enables a more rigorous monitoring of the activity and provides a clearer view of real operational performance.
 
 ---
 
 ## Key Insights
 
-The analysis highlights the gap between theoretical profitability and real operational constraints.
+The analysis highlights several important findings:
 
-Several factors affected the final results:
-
-* Production capacity limitations
-* Preparation and cleaning time
-* Demand fluctuations
-* Product positioning and quality choices
-
-The results show that operational factors and production constraints can significantly impact the real profitability of a small business.
+- hourly margin is more relevant than unit margin when production capacity is limited  
+- operational constraints can significantly impact product profitability  
+- some products may be operationally more efficient despite lower theoretical margins  
+- the gap between theoretical models and real-world results provides valuable insights for improving decision-making  
+- business data must always be interpreted within its operational context
 
 ---
 
-## Project Files
+## Tools
 
-* **python-business-analysis.ipynb**
-  Python notebook containing the main data analysis and profitability simulations.
-
-* **sql-business-monitoring.ipynb**
-  SQL notebook illustrating how operational data could be structured and monitored using a relational database.
-
-* **project-report.pdf**
-  Detailed report presenting the project, methodology, and results.
-
----
-
-## Future Work
-
-The next step of this project would be to structure operational data using a relational database in order to monitor:
-
-* sales by product
-* stock levels
-* product rotations
-* supply needs
-
-This system could be implemented using SQL to improve business monitoring and support decision-making.
+- Python  
+- Pandas  
+- Matplotlib  
+- SQL  
+- SQLite  
+- Jupyter Notebook
